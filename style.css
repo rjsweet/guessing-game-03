@@ -1,0 +1,14 @@
+body {
+  color: darkgray;
+  background-color: black;
+}
+
+header {
+  background-color: darkblue;
+  text-align: left;
+  border: orange solid 10px;
+  padding: 10px;
+}
+ol {
+  list-style-type: upper-latin ;
+}
