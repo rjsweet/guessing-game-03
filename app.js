@@ -4,7 +4,7 @@ var t = 0
 
 
 
-function function1 (){
+function namQuest (){
   var myName = prompt('Is my name Mal, yes or no?').toLowerCase()
 
   if (myName == 'yes' || myName == 'y'){
@@ -15,11 +15,11 @@ function function1 (){
     alert('sorry, thats not true');
   }
 }
-function1();
+namQuest();
 
 
 
-function function2 (){
+function homQuest (){
   var returnTo = prompt('Do I ever want to return to Michigan?').toLowerCase()
    if (returnTo == 'yes' || returnTo == 'y'){
      alert('Sorry, thats not true')
@@ -29,10 +29,10 @@ function function2 (){
      return t;
    }
 }
-function2 ();
+homQuest ();
 
 
-function function3(){
+function movQuest(){
   var movie = prompt('Is Sabrina my favorite movie?').toLowerCase()
    if (movie == 'yes' || movie == 'y'){
      alert('Thats correct!');
@@ -42,9 +42,9 @@ function function3(){
      alert('sorry, thats not true')
     }
 }
-function3();
+movQuest();
 
-function function4(){
+function songQuest(){
   var song = prompt('Is my favorite song Shambala?').toLowerCase()
    if (song == 'yes' || song == 'y'){
      alert('Thats correct!');
@@ -54,9 +54,9 @@ function function4(){
      alert('Sorry, thats not correct.')
    }
 }
-function4();
+songQuest();
 
-function function5(){
+function gameQuest(){
   var game = prompt('Is my favorite video game Torment?').toLowerCase()
    if (game == 'yes' || game == 'y'){
      alert('Thats correct!');
@@ -66,29 +66,28 @@ function function5(){
      alert('Thats incorrect!')
    }
 }
-function5();
+gameQuest();
 
 
-function functionA(){
+function numQuest(){
   var correctAnswer = 12;
 for (var i = 4; i >= 1; i--){
-   var userGuess = prompt('guess a number between 1 and 20');
-    if (userGuess < 12){
+    var userGuess = prompt('guess a number between 1 and 20');
+    if (userGuess < correctAnswer){
       alert('too low, try again');
-    } else if (userGuess > 12){
+    } else if (userGuess > correctAnswer){
       alert('too high, try again');
-    } else if (userGuess == 12){
+    } else if (userGuess == correctAnswer){
       alert('you got it!');
-      t++;
       break;
     }
-    return t;  
+    t++;  
 }
 }
-functionA();
+numQuest();
 
 
-function functionB(){
+function favGameQuest(){
   let arrayOfAnswers = ['Planescape: Torment', 'Final fantasy 7: Remake', 'Final Fantasy 7', 'Baldur\'s Gate 2', 'Baldur\'s Gate', 'Final Fantasy 11', 'Undertale', 'The Witcher 3', 'Cyberpunk 2077', 'Hades']
 outerloop:
 for (let i = 6; i >= 1; i--){
@@ -108,6 +107,6 @@ for (let i = 6; i >= 1; i--){
   } return t;
 }
 }
-functionB();
+favGameQuest();
 alert('you got ' + t + ' answers correct.')
 alert('thanks for checking out my page, hope to see you again soon!')
